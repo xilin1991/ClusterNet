@@ -15,6 +15,11 @@ The training and testing experiments are conducted using PyTorch 1.8.1 with a si
 - python 3.8
 - pytorch 1.8.1
 - torchvision 0.9.1
+```bash
+conda create -n ClusterNet python=3.8
+conda activate ClusterNet
+conda install pytorch==1.8.1 torchvision==0.9.1 cudatoolkit=10.2 -c pytorch
+```
 
 Other minor Python modules can be installed by running
 ```bash
