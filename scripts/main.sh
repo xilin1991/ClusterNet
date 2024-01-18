@@ -14,7 +14,7 @@ threshold=0.1
 
 for seq in $(<${data_dir}/ImageSets/2016/val.txt); do # for example, '<your_dataset_folder/ImageSets/2016/val.txt' in parentheses.
     echo 'sequence: '"${seq}"
-    python train_sequence_BGC.py --batch_size ${batch_size} \
+    python main.py --batch_size ${batch_size} \
         --data_dir ${dataset_dir} \
         --seq_name ${seq} \
         --n_clusters ${n_clusters} \

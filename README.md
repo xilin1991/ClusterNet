@@ -33,7 +33,7 @@ pip install opencv-python einops
 - <a href="https://web.engr.oregonstate.edu/~lif/SegTrack2/dataset.html" target="_blank">*SegTrackV2*</a>: Each sequence contains 1-6 moving objects. 
 
 Following the evaluation protocol in <a href="https://arxiv.org/abs/1901.03360" target="_blank">CIS</a>, we combine multiple objects as a single foreground and use the region similarity $\mathcal{J}$ to measure the segmentation performance for the *FBMS* and *SegTrackV2*. Binary Mask: [<a href="https://drive.google.com/file/d/16zzb10mVNuRAC3lrJ984jxWthcTWqXvl/view?usp=sharing" target="_blank">FBMS</a>][<a href="https://drive.google.com/file/d/1twATOkSw7D3ZyH7wLmwApF8WL_-jhh9m/view?usp=sharing" target="_blank">SegTrackV2</a>]
-- Path configuration: Dataset path settings is ```--data_dir``` in ```train_sequence_BGC.py```.
+- Path configuration: Dataset path settings is ```--data_dir``` in ```main.py```.
 ```python
 parser.add_argument('--data_dir', default=None, type=str, help='dataset root dir')
 ```
@@ -65,10 +65,10 @@ parser.add_argument('--data_dir', default=None, type=str, help='dataset root dir
 
 To train the ClusterNet model on a GPUs, you can use:
 ```bash
-bash scripts/train_sequence_BGC.sh
+bash scripts/main.sh
 ```
 
-In the ```train_sequence_BGC.sh``` file, first activate your Python environment and set ```gpu_id``` and ```data_dir```. Then set the hyperparameters ```batch_size```, ```n_clusters```, and ```threshold``` to 16, 30, and 0.1, respectively.
+In the ```main.sh``` file, first activate your Python environment and set ```gpu_id``` and ```data_dir```. Then set the hyperparameters ```batch_size```, ```n_clusters```, and ```threshold``` to 16, 30, and 0.1, respectively.
 
 ## Outputs
 
