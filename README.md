@@ -1,12 +1,18 @@
 # ClusterNet
 
-This is a official implementation of "Online Unsupervised Video Object Segmentation via Contrastive Motion Clustering" (IEEE TCSVT).
+This is an official implementation of "Online Unsupervised Video Object Segmentation via Contrastive Motion Clustering" (IEEE TCSVT).
 
 <div align="center">
   <img width="800", src="./figs/framework.png", title="Overall framework of the proposed ClusterNet">
 </div>
 
-Papers: [<a href="https://ieeexplore.ieee.org/document/10159996" target="_blank">TCSVT</a>] [<a href="https://arxiv.org/abs/2306.12048" target="_blank">arXiv</a>]
+<div>
+  <h4 align="left">
+Papers: <a href="https://ieeexplore.ieee.org/document/10159996" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/IEEE-TCSVT-blue?logo=IEEE&logoColor=white">
+</a>  <a href="https://arxiv.org/abs/2306.12048" target="_blank"><img src="https://img.shields.io/badge/arXiv-2306.12048-b31b1b?style=flat&logo=arXiv">
+</a>
+  </h4>
+</div>
 
 ## Prerequisites
 
